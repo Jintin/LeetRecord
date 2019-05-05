@@ -1,0 +1,33 @@
+{
+    "name": "LeetRecord",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "description": "LeetRecord is a portable/backup tool for your leetcode records",
+    "icons": {
+        "16": "icon/icon-16.png",
+        "32": "icon/icon-32.png",
+        "48": "icon/icon-48.png",
+        "128": "icon/icon-128.png"
+    },
+    "background": {
+      "scripts": ["lib/background.js"],
+      "persistent": false
+    },
+    "content_scripts": [{
+        "run_at": "document_end",
+        "matches": ["https://leetcode.com/problems/*"],
+        "js": [
+            "lib/problem.js"
+        ]
+    }],
+    "page_action": {
+      "default_popup": "lib/popup.html"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "declarativeContent",
+        "https://*.github.com/*"
+    ]
+}
