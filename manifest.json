@@ -10,10 +10,6 @@
         "48": "icon/icon-48.png",
         "128": "icon/icon-128.png"
     },
-    "background": {
-      "scripts": ["lib/background.js"],
-      "persistent": false
-    },
     "content_scripts": [{
         "run_at": "document_end",
         "matches": ["https://leetcode.com/problems/*"],
@@ -21,13 +17,11 @@
             "lib/problem.js"
         ]
     }],
-    "page_action": {
+    "browser_action": {
       "default_popup": "lib/popup.html"
     },
     "permissions": [
         "storage",
-        "activeTab",
-        "declarativeContent",
         "https://*.github.com/*"
     ]
 }

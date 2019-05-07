@@ -2,6 +2,8 @@
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/iicppbnoaocmkfglopamnnmecehninep.svg?colorB=brightgreen)](https://chrome.google.com/webstore/detail/leetrecord/iicppbnoaocmkfglopamnnmecehninep)
 
+![Logo](icon/icon-128.png)
+
 LeetRecord is a chrome extension to record your leetcode result.
 
 ## Installation

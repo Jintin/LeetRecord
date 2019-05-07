@@ -37,24 +37,20 @@
         <div>
             Auth token:<br>
             <input id="token" type="password">
+            <button id="generate">Generate Token</button>
+            <button id="save">Save</button>
+            <hr>
+            Repository:<br>
+            <select id="repos">
+                <option disabled selected value> -- select an option -- </option>
+            </select>
+            <button id="create">Create Repo</button>
         </div>
-        <button id="generate">Generate Token</button>
-        <button id="save">Save</button>
-        <hr>
-        Repository:<br>
-        <select id="repos">
-            <option disabled selected value> -- select an option -- </option>
-        </select>
-        <button id="create">Create Repo</button>
         <hr>
         <div align="right">
             <div id="loading" class="loader left"></div>
             <span id="info" class="left">Loading</span>
             <button id="upload">Upload</button>
-        </div>
-
-        <div id="info">
-
         </div>
         <script src="popup.js"></script>
     </body>
