@@ -11,12 +11,7 @@ LeetRecord is a chrome extension to record your leetcode result.
 - Generate Personal Access Token by click the `Generate` button.
 - Copy the token and paste in OAuth token field.
 - Create new repo by the `Create repo` or select your own repo as the storage.
-- Click `Upload Solution` when you want.
-
-## TroubleShooting
-
-- It might take few second for fetch new created repo.
-- If some part of your code is not uploaded mostly because that part is not rendered on screen yet, make sure all your solution is being rendered by scroll from top to end.
+- Click `Upload` to upload your solution.
 
 ## Contributing
 
