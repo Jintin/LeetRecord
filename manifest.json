@@ -1,6 +1,6 @@
 {
     "name": "LeetRecord",
-    "version": "1.4",
+    "version": "1.5",
     "manifest_version": 2,
 
     "description": "LeetRecord is a portable/backup tool for your leetcode records",
@@ -11,7 +11,7 @@
         "128": "icon/icon-128.png"
     },
     "content_scripts": [{
-        "run_at": "document_end",
+        "run_at": "document_start",
         "matches": ["https://leetcode.com/problems/*"],
         "js": [
             "lib/problem.js"
