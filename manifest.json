@@ -10,6 +10,10 @@
     "48": "icon/icon-48.png",
     "128": "icon/icon-128.png"
   },
+  "background": {
+    "scripts": ["lib/background.js"],
+    "persistent": false
+  },
   "content_scripts": [{
     "run_at": "document_start",
     "matches": ["https://leetcode.com/problems/*"],
